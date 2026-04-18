@@ -1,0 +1,12 @@
+.section { background: var(--bg-solid); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; display: flex; flex-direction: column; gap: 14px; position: relative; overflow: hidden; text-decoration: none; color: inherit; transition: border-color .3s, transform .3s, box-shadow .3s; }
+.card:hover { border-color: var(--border-hover); transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,.32); }
+.cardBar { position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: linear-gradient(180deg, var(--accent), var(--amber)); transform: scaleY(0); transform-origin: top; transition: transform .35s ease; }
+.card:hover .cardBar { transform: scaleY(1); }
+.icon { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #fff; }
+.body h3 { font-size: 1rem; font-weight: 700; margin-bottom: 7px; }
+.body p { font-size: .83rem; color: var(--text-muted); line-height: 1.6; }
+.badge { align-self: flex-start; margin-top: auto; background: rgba(251,191,36,.08); border: 1px solid rgba(251,191,36,.22); color: var(--amber); font-size: .68rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: 3px 10px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; }
+.ext { position: absolute; top: 18px; right: 18px; color: var(--text-faint); font-size: 1rem; transition: color .3s; }
+.card:hover .ext { color: var(--accent2); }

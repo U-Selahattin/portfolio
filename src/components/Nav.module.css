@@ -1,0 +1,27 @@
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 40px; z-index: 100;
+  transition: background .3s, border-color .3s, backdrop-filter .3s;
+  border-bottom: 1px solid transparent;
+}
+.scrolled { background: rgba(8,9,15,.9); backdrop-filter: blur(18px); border-color: rgba(59,130,246,.12); }
+.logo { font-family: 'JetBrains Mono', monospace; font-size: 1.3rem; font-weight: 700; color: var(--text); text-decoration: none; }
+.logo span { color: var(--accent); }
+.links { display: flex; align-items: center; gap: 32px; list-style: none; }
+.links a { color: var(--text-muted); text-decoration: none; font-size: .87rem; font-weight: 500; transition: color .25s; position: relative; }
+.links a:hover { color: var(--text); }
+.links a::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 1px; background: var(--accent); transition: width .25s; }
+.links a:hover::after { width: 100%; }
+.cta { background: var(--accent) !important; color: #fff !important; padding: 7px 20px; border-radius: var(--radius, 8px); font-size: .84rem !important; font-weight: 600 !important; }
+.cta:hover { background: #2563eb !important; }
+.cta::after { display: none !important; }
+.burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+.burger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 1px; transition: .3s; }
+.mobile { position: fixed; inset: 0; background: rgba(8,9,15,.97); backdrop-filter: blur(20px); z-index: 99; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity .3s; }
+.mobileOpen { opacity: 1; pointer-events: all; }
+.mobile ul { list-style: none; text-align: center; }
+.mobile ul li { margin: 14px 0; }
+.mobileLink { font-size: 1.8rem; font-weight: 700; color: var(--text); text-decoration: none; transition: color .25s; }
+.mobileLink:hover { color: var(--accent2); }
+@media (max-width: 768px) { .links { display: none; } .burger { display: flex; } .nav { padding: 0 20px; } }

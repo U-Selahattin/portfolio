@@ -1,0 +1,25 @@
+.section { background: var(--bg-solid); }
+.intro { max-width: 680px; color: var(--text-muted); font-size: 1rem; line-height: 1.75; margin-bottom: 60px; }
+.timeline { position: relative; }
+.timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: linear-gradient(180deg, rgba(59,130,246,.3), rgba(251,191,36,.2), rgba(59,130,246,.1)); transform: translateX(-50%); }
+.item { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 32px; position: relative; }
+.item::before { content: ''; position: absolute; left: 50%; top: 18px; width: 9px; height: 9px; background: var(--amber); border-radius: 50%; transform: translateX(-50%); box-shadow: 0 0 14px rgba(251,191,36,.6); }
+.date { font-family: 'JetBrains Mono', monospace; font-size: .73rem; color: var(--amber); letter-spacing: .08em; padding-top: 12px; text-align: right; }
+.right .date { order: 2; text-align: left; }
+.right .content { order: 1; }
+.content { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid transparent; border-radius: var(--radius); padding: 18px 22px; transition: border-color .3s, border-left-color .3s; }
+.content:hover { border-color: var(--border-hover); border-left-color: var(--accent); }
+.contentHeader { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+.contentHeader h4 { font-size: .93rem; font-weight: 700; flex: 1; }
+.articleLink { font-size: .72rem; color: var(--accent2); text-decoration: none; white-space: nowrap; background: rgba(59,130,246,.08); border: 1px solid rgba(59,130,246,.22); padding: 2px 9px; border-radius: 4px; font-family: 'JetBrains Mono', monospace; transition: .25s; }
+.articleLink:hover { background: rgba(59,130,246,.16); }
+.source { font-size: .7rem; color: var(--text-faint); white-space: nowrap; font-style: italic; font-family: 'JetBrains Mono', monospace; }
+.sourceSmall { display: block; margin-top: 8px; font-size: .7rem; color: var(--text-faint); font-style: italic; font-family: 'JetBrains Mono', monospace; }
+.content p { font-size: .83rem; color: var(--text-muted); line-height: 1.6; }
+@media (max-width: 768px) {
+  .timeline::before { left: 14px; }
+  .item { grid-template-columns: 1fr; padding-left: 40px; gap: 6px; }
+  .item::before { left: 10px; top: 14px; }
+  .date, .right .date { text-align: left; order: 0; padding-top: 0; }
+  .right .content { order: 0; }
+}
