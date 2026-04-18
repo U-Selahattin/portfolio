@@ -21,7 +21,7 @@ export default function Hero() {
         </p>
 
         <div className={s.actions}>
-          <a href="#projects" className={s.btnPrimary}>Voir mes travaux</a>
+          <a href="#projects" className={s.btnPrimary}>Voir mes projets</a>
           <a href="#contact" className={s.btnGhost}>Me contacter</a>
         </div>
 
