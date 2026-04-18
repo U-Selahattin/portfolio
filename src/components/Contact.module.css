@@ -17,5 +17,6 @@
 .group input::placeholder, .group textarea::placeholder { color: var(--text-faint); }
 .submit { padding: 13px 28px; background: var(--accent); color: #fff; border: none; border-radius: var(--radius); font-family: inherit; font-size: .9rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: .3s; box-shadow: 0 0 24px rgba(59,130,246,.28); }
 .submit:hover { background: #2563eb; box-shadow: 0 0 36px rgba(59,130,246,.4); transform: translateY(-1px); }
-.success { background: var(--amber) !important; color: #1c1000 !important; box-shadow: 0 0 28px rgba(251,191,36,.3) !important; }
+.success { background: var(--green) !important; color: #fff !important; box-shadow: 0 0 28px rgba(16,185,129,.3) !important; }
+.error   { background: #ef4444 !important; color: #fff !important; box-shadow: 0 0 28px rgba(239,68,68,.3) !important; }
 @media (max-width: 768px) { .grid { grid-template-columns: 1fr; gap: 44px; } .row { grid-template-columns: 1fr; } }

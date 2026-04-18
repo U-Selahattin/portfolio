@@ -3,14 +3,45 @@ import { meta } from '../data/content'
 import { useInView } from '../hooks/useInView'
 import s from './Contact.module.css'
 
+// 👉 Remplace par ton ID Formspree (voir README ou instructions)
+const FORMSPREE_ID = 'xlgabyzg'
+
 export default function Contact() {
   const [ref, inView] = useInView()
-  const [sent, setSent] = useState(false)
+  const [status, setStatus] = useState('idle') // idle | sending | success | error
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    setSent(true)
-    setTimeout(() => { setSent(false); e.target.reset() }, 3500)
+    setStatus('sending')
+
+    const data = new FormData(e.target)
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      })
+
+      if (res.ok) {
+        setStatus('success')
+        e.target.reset()
+        setTimeout(() => setStatus('idle'), 4000)
+      } else {
+        setStatus('error')
+        setTimeout(() => setStatus('idle'), 4000)
+      }
+    } catch {
+      setStatus('error')
+      setTimeout(() => setStatus('idle'), 4000)
+    }
+  }
+
+  const btnLabel = {
+    idle:    <> Envoyer le message <span>→</span></>,
+    sending: '⏳ Envoi en cours...',
+    success: '✓ Message envoyé !',
+    error:   '✗ Erreur — réessaie',
   }
 
   return (
@@ -49,27 +80,34 @@ export default function Contact() {
             </div>
           </div>
 
-          <form className={`${s.form} reveal-right ${inView ? 'visible' : ''}`} onSubmit={handleSubmit}>
+          <form
+            className={`${s.form} reveal-right ${inView ? 'visible' : ''}`}
+            onSubmit={handleSubmit}
+          >
             <div className={s.row}>
               <div className={s.group}>
                 <label>Nom complet</label>
-                <input type="text" placeholder="Jean Dupont" required />
+                <input name="name" type="text" placeholder="Jean Dupont" required />
               </div>
               <div className={s.group}>
                 <label>Email</label>
-                <input type="email" placeholder="jean@exemple.fr" required />
+                <input name="email" type="email" placeholder="jean@exemple.fr" required />
               </div>
             </div>
             <div className={s.group}>
               <label>Sujet</label>
-              <input type="text" placeholder="Proposition d'alternance" />
+              <input name="subject" type="text" placeholder="Proposition d'alternance" />
             </div>
             <div className={s.group}>
               <label>Message</label>
-              <textarea rows={5} placeholder="Bonjour Selahattin, ..." required />
+              <textarea name="message" rows={5} placeholder="Bonjour Selahattin, ..." required />
             </div>
-            <button type="submit" className={`${s.submit} ${sent ? s.success : ''}`}>
-              {sent ? '✓ Message envoyé !' : <>Envoyer le message <span>→</span></>}
+            <button
+              type="submit"
+              disabled={status === 'sending'}
+              className={`${s.submit} ${status === 'success' ? s.success : ''} ${status === 'error' ? s.error : ''}`}
+            >
+              {btnLabel[status]}
             </button>
           </form>
         </div>
