@@ -4,58 +4,178 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ── SEO principal ── -->
-    <title>Selahattin UNAL — Développeur & Cybersécurité | BTS SIO SLAM</title>
-    <meta name="description" content="Portfolio de Selahattin UNAL, titulaire d'un BTS SIO SLAM. Développement web, logiciel et cybersécurité : Vue.js, PHP, MySQL, Python, Node.js." />
-    <meta name="keywords" content="Selahattin UNAL, développeur web, développeur logiciel, cybersécurité, BTS SIO, SLAM, Vue.js, PHP, MySQL, Python, portfolio, Île-de-France, stage" />
+    <!-- ── TITRE & DESCRIPTION ── -->
+    <title>Selahattin UNAL — Développeur Web, Logiciel & Cybersécurité | BTS SIO SLAM | Île-de-France</title>
+    <meta name="description" content="Portfolio de Selahattin UNAL — Développeur web et logiciel, spécialiste cybersécurité, titulaire BTS SIO SLAM 2026. Compétences : Vue.js, JavaScript, PHP, MySQL, Python, React, Node.js. Disponible pour un stage en Île-de-France et Eure-et-Loir." />
+    <meta name="keywords" content="Selahattin UNAL, UNAL Selahattin, développeur web, développeur logiciel, cybersécurité, BTS SIO SLAM, portfolio développeur, Vue.js, JavaScript, PHP, MySQL, Python, React, Node.js, développeur Île-de-France, développeur Eure-et-Loir, stage développeur, U-Selahattin, selahattin unal portfolio, selahattin unal développeur, selahattin unal cyber, Lycée Geoffroy Saint-Hilaire, Étampes développeur" />
     <meta name="author" content="Selahattin UNAL" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#08090f" />
     <link rel="canonical" href="https://portfolio-selahattin.vercel.app" />
 
-    <!-- ── Open Graph (partage réseaux sociaux, LinkedIn, etc.) ── -->
-    <meta property="og:type"        content="website" />
-    <meta property="og:title"       content="Selahattin UNAL — Développeur Web | BTS SIO SLAM" />
-    <meta property="og:description" content="Étudiant BTS SIO SLAM, passionné par le développement web. Vue.js, React, PHP, MySQL, Node.js. Disponible en alternance / stage." />
+    <!-- ── OPEN GRAPH (LinkedIn, Facebook, WhatsApp) ── -->
+    <meta property="og:type"        content="profile" />
+    <meta property="og:title"       content="Selahattin UNAL — Développeur & Cybersécurité | BTS SIO SLAM" />
+    <meta property="og:description" content="Développeur web & logiciel, cybersécurité. Titulaire BTS SIO SLAM 2026. Vue.js, JavaScript, PHP, MySQL, Python. Disponible en stage — Île-de-France / Eure-et-Loir." />
     <meta property="og:url"         content="https://portfolio-selahattin.vercel.app" />
     <meta property="og:locale"      content="fr_FR" />
-    <meta property="og:site_name"   content="Portfolio Selahattin UNAL" />
+    <meta property="og:site_name"   content="Selahattin UNAL — Portfolio" />
+    <meta property="profile:first_name" content="Selahattin" />
+    <meta property="profile:last_name"  content="UNAL" />
+    <meta property="profile:username"   content="U-Selahattin" />
 
-    <!-- ── Twitter Card ── -->
+    <!-- ── TWITTER CARD ── -->
     <meta name="twitter:card"        content="summary" />
-    <meta name="twitter:title"       content="Selahattin UNAL — Développeur Web" />
-    <meta name="twitter:description" content="Portfolio de Selahattin UNAL — BTS SIO SLAM, développeur web Vue.js / React / PHP." />
+    <meta name="twitter:title"       content="Selahattin UNAL — Développeur & Cybersécurité" />
+    <meta name="twitter:description" content="Portfolio de Selahattin UNAL — Dev web, logiciel & cybersécurité. BTS SIO SLAM 2026." />
+    <meta name="twitter:creator"     content="@U-Selahattin" />
 
-    <!-- ── Données structurées JSON-LD (Google comprend qui tu es) ── -->
+    <!-- ── DONNÉES STRUCTURÉES JSON-LD ── -->
+
+    <!-- 1. Personne (le plus important pour Google) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
+      "@id": "https://portfolio-selahattin.vercel.app/#person",
       "name": "Selahattin UNAL",
-      "jobTitle": "Étudiant BTS SIO SLAM — Développeur Web",
+      "givenName": "Selahattin",
+      "familyName": "UNAL",
+      "jobTitle": "Développeur Web & Logiciel — Cybersécurité",
+      "description": "Développeur web et logiciel titulaire d'un BTS SIO SLAM (2026), spécialisé en cybersécurité. Compétences : Vue.js, JavaScript, PHP, MySQL, Python, React, Node.js. Disponible pour un stage en Île-de-France et Eure-et-Loir.",
       "email": "unalselahattin.pro@gmail.com",
+      "telephone": "+33767669719",
       "url": "https://portfolio-selahattin.vercel.app",
+      "image": "https://portfolio-selahattin.vercel.app/favicon.svg",
       "sameAs": [
         "https://github.com/U-Selahattin",
         "https://fr.linkedin.com/in/selahattin-unal"
       ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Île-de-France",
+        "addressCountry": "FR"
+      },
       "alumniOf": {
         "@type": "EducationalOrganization",
         "name": "Lycée Geoffroy Saint-Hilaire",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Étampes",
+          "postalCode": "91150",
           "addressCountry": "FR"
         }
       },
-      "knowsAbout": ["JavaScript", "Vue.js", "React", "PHP", "MySQL", "Python", "HTML", "CSS", "Node.js"]
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "BTS SIO — option SLAM",
+          "credentialCategory": "diploma",
+          "dateCreated": "2026"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Bac Pro MELEC",
+          "credentialCategory": "diploma",
+          "dateCreated": "2024"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Certification SecNumérique Académie (ANSSI)"
+        }
+      ],
+      "knowsAbout": [
+        "Développement web",
+        "Développement logiciel",
+        "Cybersécurité",
+        "Vue.js",
+        "JavaScript",
+        "PHP",
+        "MySQL",
+        "Python",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "React",
+        "Git",
+        "Linux",
+        "Réseaux informatiques",
+        "VLAN",
+        "DHCP",
+        "DNS",
+        "Sécurité des systèmes d'information"
+      ],
+      "knowsLanguage": ["fr", "tr"]
     }
     </script>
 
-    <!-- ── Favicon ── -->
+    <!-- 2. Site web -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://portfolio-selahattin.vercel.app/#website",
+      "url": "https://portfolio-selahattin.vercel.app",
+      "name": "Selahattin UNAL — Portfolio",
+      "description": "Portfolio personnel de Selahattin UNAL — Développeur web, logiciel et cybersécurité",
+      "inLanguage": "fr-FR",
+      "author": { "@id": "https://portfolio-selahattin.vercel.app/#person" }
+    }
+    </script>
+
+    <!-- 3. Page web -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "@id": "https://portfolio-selahattin.vercel.app/#profilepage",
+      "url": "https://portfolio-selahattin.vercel.app",
+      "name": "Portfolio de Selahattin UNAL",
+      "dateModified": "2026-07-06",
+      "mainEntity": { "@id": "https://portfolio-selahattin.vercel.app/#person" }
+    }
+    </script>
+
+    <!-- ── PERFORMANCE ── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://formspree.io" />
+
+    <!-- ── FAVICON ── -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- ── CONTENU VISIBLE SANS JAVASCRIPT (pour les crawlers) ── -->
+    <noscript>
+      <main style="font-family:sans-serif;max-width:800px;margin:40px auto;padding:0 20px;color:#333">
+        <h1>Selahattin UNAL — Développeur Web, Logiciel & Cybersécurité</h1>
+        <p>Titulaire d'un BTS SIO option SLAM (2026) et d'un Bac Pro MELEC (2024). Développeur web et logiciel, spécialisé en cybersécurité des systèmes d'information.</p>
+        <h2>Compétences</h2>
+        <p>Vue.js, JavaScript, HTML, CSS, PHP, MySQL, Python, Node.js, React, Git, Linux, Windows Server, DHCP, DNS, VLAN, Cybersécurité, Méthode Agile</p>
+        <h2>Certifications</h2>
+        <ul>
+          <li>SecNumérique Académie — ANSSI</li>
+          <li>JavaScript — OpenClassrooms</li>
+          <li>Vue.js — OpenClassrooms</li>
+          <li>ChatGPT & IA Générative — OpenClassrooms</li>
+        </ul>
+        <h2>Projets</h2>
+        <ul>
+          <li>Palas Berber — Site web barbershop avec réservation en ligne (Next.js, TypeScript, Tailwind)</li>
+          <li>SIO Chat — Application de chat temps réel full-stack (Vue.js, Node.js)</li>
+          <li>Vélib' App — Disponibilité stations Vélib' en temps réel (Vue.js, API REST)</li>
+        </ul>
+        <h2>Contact</h2>
+        <p>Email : unalselahattin.pro@gmail.com | Téléphone : 07 67 66 97 19</p>
+        <p>Localisation : Île-de-France — Eure-et-Loir | Disponible : Stage</p>
+        <p>GitHub : <a href="https://github.com/U-Selahattin">github.com/U-Selahattin</a></p>
+        <p>LinkedIn : <a href="https://fr.linkedin.com/in/selahattin-unal">linkedin.com/in/selahattin-unal</a></p>
+      </main>
+    </noscript>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
