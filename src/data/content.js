@@ -8,7 +8,7 @@ export const meta = {
   role: "Développeur Web · BTS SIO SLAM",
   email: "unalselahattin.pro@gmail.com",
   phone: "07 67 66 97 19",
-  location: "Étampes (91) — Châteaudun (28)",
+  location: "Île-de-France — Eure-et-Loir",
   school: "Lycée Geoffroy Saint-Hilaire, Étampes",
   available: true,
   // 👉 Remplace "#" par tes vraies URLs
@@ -26,7 +26,7 @@ export const about = {
     { label: "Diplôme", value: "BTS SIO SLAM — 2026" },
     { label: "École", value: "Lycée G. Saint-Hilaire" },
     { label: "Bac obtenu", value: "Bac Pro MELEC — Assez Bien" },
-    { label: "Disponibilité", value: "CDI / Alternance" },
+    { label: "Disponibilité", value: "Stage" },
   ],
 }
 
@@ -55,36 +55,36 @@ export const skills = [
     icon: "⚡",
     category: "Front-end",
     items: [
-      { name: "HTML / CSS", level: 90 },
-      { name: "JavaScript", level: 75 },
-      { name: "Vue.js", level: 65 },
+      { name: "HTML / CSS", level: 100 },
+      { name: "JavaScript", level: 100 },
+      { name: "Vue.js", level: 100 },
     ],
   },
   {
     icon: "🛠️",
     category: "Back-end & BDD",
     items: [
-      { name: "PHP", level: 70 },
-      { name: "SQL / MySQL", level: 70 },
-      { name: "Python", level: 55 },
+      { name: "PHP", level: 100 },
+      { name: "SQL / MySQL", level: 100 },
+      { name: "Python", level: 100 },
     ],
   },
   {
     icon: "🌐",
     category: "Réseaux & Systèmes",
     items: [
-      { name: "DHCP / DNS / VLAN", level: 75 },
-      { name: "Linux / Windows Server", level: 65 },
-      { name: "Cybersécurité", level: 60 },
+      { name: "DHCP / DNS / VLAN", level: 100 },
+      { name: "Linux / Windows Server", level: 100 },
+      { name: "Cybersécurité", level: 100 },
     ],
   },
   {
     icon: "🔧",
     category: "Outils & Méthodes",
     items: [
-      { name: "Git / GitHub", level: 72 },
-      { name: "VS Code", level: 85 },
-      { name: "Méthode Agile", level: 60 },
+      { name: "Git / GitHub", level: 100 },
+      { name: "VS Code", level: 100 },
+      { name: "Méthode Agile", level: 100 },
     ],
   },
 ]
