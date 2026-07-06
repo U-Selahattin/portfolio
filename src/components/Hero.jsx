@@ -16,7 +16,7 @@ export default function Hero() {
         </h1>
 
         <p className={s.sub}>
-          Je conçois et développe des applications web modernes.<br />
+          Développement web & logiciel · Cybersécurité.<br />
           Passionné par la technologie, curieux, toujours en veille.
         </p>
 

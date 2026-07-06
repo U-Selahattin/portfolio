@@ -5,7 +5,7 @@
 
 export const meta = {
   name: "Selahattin UNAL",
-  role: "Développeur Web · BTS SIO SLAM",
+  role: "Développeur · Cybersécurité · BTS SIO SLAM",
   email: "unalselahattin.pro@gmail.com",
   phone: "07 67 66 97 19",
   location: "Île-de-France — Eure-et-Loir",
@@ -17,7 +17,7 @@ export const meta = {
 }
 
 export const about = {
-  lead: "Développeur web titulaire d'un BTS SIO option SLAM, je conçois des solutions logicielles et des applications métiers modernes.",
+  lead: "Titulaire d'un BTS SIO option SLAM, je développe des applications web et logicielles, et je m'investis dans la cybersécurité des systèmes d'information.",
   paragraphs: [
     "Titulaire d'un Bac Pro MELEC (Mention Assez Bien, 2024) et d'un BTS SIO SLAM (2026), j'ai élargi mon horizon vers l'informatique pour combiner logique technique et créativité. Je suis passionné par l'évolution des technologies et j'aime comprendre comment les outils de demain se construisent aujourd'hui.",
     "Mon objectif : évoluer en tant que développeur full-stack et contribuer à des projets qui ont du sens.",
