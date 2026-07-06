@@ -40,7 +40,7 @@ export default function About() {
               </div>
             </div>
             <div className={`${s.floatCard} ${s.fc1}`}>
-              <span>🎓</span> BTS SIO 2024–2026
+              <span>🎓</span> BTS SIO SLAM — Obtenu 2026
             </div>
             <div className={`${s.floatCard} ${s.fc2}`}>
               <span>💡</span> Veille techno active

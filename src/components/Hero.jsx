@@ -62,7 +62,7 @@ export default function Hero() {
       <div className={s.stats}>
         <div className={s.statCard}>
           <span className={s.statNum}>2026</span>
-          <span className={s.statLabel}>Diplôme visé</span>
+          <span className={s.statLabel}>BTS SIO SLAM</span>
         </div>
         <div className={s.statCard}>
           <span className={s.statNum}>4+</span>

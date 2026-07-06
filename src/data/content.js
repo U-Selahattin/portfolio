@@ -5,7 +5,7 @@
 
 export const meta = {
   name: "Selahattin UNAL",
-  role: "Étudiant BTS SIO SLAM · 2ème année",
+  role: "Développeur Web · BTS SIO SLAM",
   email: "unalselahattin.pro@gmail.com",
   phone: "07 67 66 97 19",
   location: "Étampes (91) — Châteaudun (28)",
@@ -17,23 +17,23 @@ export const meta = {
 }
 
 export const about = {
-  lead: "Étudiant en BTS SIO option SLAM au Lycée Geoffroy Saint-Hilaire d'Étampes, je me forme au développement de solutions logicielles et d'applications métiers.",
+  lead: "Développeur web titulaire d'un BTS SIO option SLAM, je conçois des solutions logicielles et des applications métiers modernes.",
   paragraphs: [
-    "Titulaire d'un Bac Pro MELEC (Mention Assez Bien, 2024), j'ai élargi mon horizon vers l'informatique pour combiner logique technique et créativité. Je suis passionné par l'évolution des technologies et j'aime comprendre comment les outils de demain se construisent aujourd'hui.",
-    "Mon objectif : devenir développeur full-stack et contribuer à des projets qui ont du sens.",
+    "Titulaire d'un Bac Pro MELEC (Mention Assez Bien, 2024) et d'un BTS SIO SLAM (2026), j'ai élargi mon horizon vers l'informatique pour combiner logique technique et créativité. Je suis passionné par l'évolution des technologies et j'aime comprendre comment les outils de demain se construisent aujourd'hui.",
+    "Mon objectif : évoluer en tant que développeur full-stack et contribuer à des projets qui ont du sens.",
   ],
   info: [
-    { label: "Formation", value: "BTS SIO SLAM" },
+    { label: "Diplôme", value: "BTS SIO SLAM — 2026" },
     { label: "École", value: "Lycée G. Saint-Hilaire" },
     { label: "Bac obtenu", value: "Bac Pro MELEC — Assez Bien" },
-    { label: "Disponibilité", value: "Alternance / Stage" },
+    { label: "Disponibilité", value: "CDI / Alternance" },
   ],
 }
 
 export const btsSio = {
   title: "BTS SIO",
   subtitle: "Services Informatiques aux Organisations",
-  description: "Formation post-bac en 2 ans qui forme des professionnels capables de répondre aux besoins informatiques des entreprises : développement d'applications, gestion des systèmes et support technique.",
+  description: "Diplôme post-bac en 2 ans formant des professionnels capables de répondre aux besoins informatiques des entreprises : développement d'applications, gestion des systèmes et support technique. Obtenu en 2026.",
   options: [
     {
       code: "SISR",
